@@ -1,15 +1,11 @@
 html {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
-
 *,
 *::before,
 *::after {
-  -webkit-box-sizing: inherit;
-          box-sizing: inherit;
+  box-sizing: inherit;
 }
-
 body {
   font-family: "Open Sans", sans-serif;
   font-weight: normal;
@@ -18,43 +14,25 @@ body {
   line-height: 26px;
   letter-spacing: 0.02em;
 }
-
 a {
   text-decoration: none;
 }
-
 ul {
   list-style: none;
   padding: 0px;
   margin: 0px;
 }
-
 .container {
   margin: auto;
   padding: 0px 15px 0px 15px;
   width: 100%;
-}
-
-@media screen and (min-width: 480px) {
-  .container {
+  @media screen and (min-width: 480px) {
     width: 480px;
   }
-}
-
-@media screen and (min-width: 768px) {
-  .container {
+  @media screen and (min-width: 768px) {
     width: 768px;
   }
-}
-
-@media screen and (min-width: 1280px) {
-  .container {
+  @media screen and (min-width: 1280px) {
     width: 1200px;
   }
 }
-
-.about_us {
-  padding-top: 84px;
-  padding-bottom: 84px;
-}
-/*# sourceMappingURL=main.css.map */
