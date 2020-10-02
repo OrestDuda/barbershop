@@ -1,4 +1,35 @@
 .about_us {
   padding-top: 84px;
   padding-bottom: 84px;
+  .working_photo {
+    display: none;
+  }
+  h3 {
+    font-family: "Raleway", sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 33px;
+    letter-spacing: 0.05em;
+    color: $color_black;
+    margin-bottom: 20px;
+  }
+  h4 {
+    font-family: "Open Sans", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: 0.02em;
+    color: $color_dark_grey;
+    margin-bottom: 20px;
+  }
+  .description {
+    color: $color_dark_grey;
+    margin: 0px;
+    margin-bottom: 40px;
+  }
+  .button {
+    color: $color_black;
+  }
 }
