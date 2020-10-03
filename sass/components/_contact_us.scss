@@ -24,6 +24,10 @@
         text-transform: uppercase;
         color: rgba(157, 164, 189, 0.4);
         padding-bottom: 8px;
+        &:hover,
+        &:focus {
+          color: $color_white;
+        }
         input {
           appearance: none;
           outline: none;
@@ -38,7 +42,9 @@
           line-height: 15px;
           letter-spacing: 0.1em;
           color: $color_white;
+          &:hover,
           &:focus {
+            color: $color_white;         
             appearance: none;
             border-bottom: 1px solid $color_white;
             color: $color_white;

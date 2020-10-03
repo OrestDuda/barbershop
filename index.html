@@ -16,26 +16,38 @@
 <body>
     <header class="header">
         <div class="container">
-            <div>
+            <div class="aside">
                 <ul>
                     <li>Instagram</li>
                     <li>Youtube</li>
                 </ul>
             </div>
-            <div>
-                <nav>
-                    <ul>
-                        <li>О нас</li>
-                        <li>Услуги и цены</li>
-                        <li>Мастера</li>
-                        <li>Контакты</li>
-                    </ul>
-                </nav>
-                <div>
-                    <a>+38 044 111 11 11</a>
-                    <button class="button">онлайн-запись</button>
+            <div class="header-main">
+                <div class="logo-burger">
+                    <svg width="69" height="55">
+                        <use href="./images/sprite.svg#Logo"></use>
+                    </svg>
+                    <svg width="24" height="16">
+                        <use href="./images/sprite.svg#menu"></use>
+                    </svg>
+
                 </div>
-                <p>A hair salon for men in Kyiv</p>
+                <div class="navigation">
+                    <nav>
+                        <ul>
+                            <li>О нас</li>
+                            <li>Услуги и цены</li>
+                            <li>Мастера</li>
+                            <li>Контакты</li>
+                        </ul>
+                    </nav>
+                    <div class="header-contacts">
+                        <a>+38 044 111 11 11</a>
+                        <button class="button">онлайн-запись</button>
+                    </div>
+                </div>
+
+                <p class="title">A hair salon for men in Kyiv</p>
                 <h1>BarberShop</h1>
                 <p>Мы эксперты в модных мужских стрижках.
                     Работаем быстро, осторожно и со вкусом.
@@ -152,7 +164,12 @@
             <h2>Наши мастера</h2>
             <ul>
                 <li class="member">
-                    <img src="./images/img-3.jpg" alt="John Smith" width="418px">
+                    <picture>
+                        <source srcset="./images/img-3.webp" type="image/webp">
+                        <img srcset="./images/img-3.jpg 1x,
+                                    ./images/img-3-x2.jpg 2x" src="./images/img-370.jpg" alt="John Smith"
+                            width="418" />
+                    </picture>
                     <p class="name">John Smith</p>
                     <p class="profession">Extreme Barber</p>
                     <ul class="social-links">
@@ -179,7 +196,11 @@
                     </ul>
                 </li>
                 <li class="member">
-                    <img src="./images/img-4.jpg" alt="Michele Doe" width="418px">
+                    <picture>
+                        <source srcset="./images/img-4.webp" type="image/webp">
+                        <img srcset="./images/img-4.jpg 1x,
+                        ./images/img-4-x2.jpg 2x" src="./images/img-4.jpg" alt="Michele Doe" width="418" />
+                    </picture>
                     <p class="name">Michele Doe</p>
                     <p class="profession">Extreme Barber</p>
                     <ul class="social-links">
@@ -207,7 +228,11 @@
                 </li>
                 </li>
                 <li class="member">
-                    <img src="./images/img-5.jpg" alt="Alan Black" width="418px">
+                    <picture>
+                        <source srcset="./images/img-5.webp" type="image/webp">
+                        <img srcset="./images/img-5.jpg 1x,
+                        ./images/img-5-x2.jpg 2x" src="./images/img-5.jpg" alt="Alan Black" width="418" />
+                    </picture>
                     <p class="name">Alan Black</p>
                     <p class="profession">Extreme Barber</p>
                     <ul class="social-links">
@@ -242,10 +267,34 @@
         <div class="container">
             <p class="title">На латинском языке “барба” означает “борода”</p>
             <ul>
-                <li><img src="./images/img-6.jpg" width="418"></li>
-                <li><img src="./images/img-7.jpg" width="418"></li>
-                <li><img src="./images/img-8.jpg" width="418"></li>
-                <li><img src="./images/img-9.jpg" width="418"></li>
+                <li>
+                    <picture>
+                        <source srcset="./images/img-6.webp" type="image/webp">
+                        <img srcset="./images/img-6.jpg 1x,
+                    ./images/img-6-x2.jpg 2x" src="./images/img-6.jpg" width="418" />
+                    </picture>
+                </li>
+                <li>
+                    <picture>
+                        <source srcset="./images/img-7.webp" type="image/webp">
+                        <img srcset="./images/img-7.jpg 1x,
+                    ./images/img-7-x2.jpg 2x" src="./images/img-7.jpg" width="418" />
+                    </picture>
+                </li>
+                <li>
+                    <picture>
+                        <source srcset="./images/img-8.webp" type="image/webp">
+                        <img srcset="./images/img-8.jpg 1x,
+                                    ./images/img-8-x2.jpg 2x" src="./images/img-8.jpg" width="418" />
+                    </picture>
+                </li>
+                <li>
+                    <picture>
+                        <source srcset="./images/img-9.webp" type="image/webp">
+                        <img srcset="./images/img-9.jpg 1x,
+                    ./images/img-9-x2.jpg 2x" src="./images/img-9.jpg" width="418" />
+                    </picture>
+                </li>
             </ul>
         </div>
     </section>
@@ -254,8 +303,8 @@
             <div class="online">
                 <h2>Онлайн-запись</h2>
                 <form>
-                    <label class="label">Имя*
-                        <input type="text">
+                    <label class="label" for="name">Имя*
+                        <input type="text" name="name" id="name">
                     </label>
                     <label>Телефон*
                         <input type="number">

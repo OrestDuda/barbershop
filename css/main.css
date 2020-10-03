@@ -19,17 +19,23 @@ body {
   letter-spacing: 0.02em;
 }
 
-h1 {
+body h1 {
   font-family: "Raleway", sans-serif;
   font-style: normal;
   font-weight: bold;
-  font-size: 48px;
-  line-height: 56px;
+  font-size: 30px;
+  line-height: 48px;
   letter-spacing: 0.05em;
-  margin: 0px;
+  color: #ffffff;
 }
 
-h2 {
+@media screen and (min-width: 480px) {
+  body h1 {
+    font-size: 48px;
+  }
+}
+
+body h2 {
   font-family: "Raleway", sans-serif;
   font-style: normal;
   font-weight: bold;
@@ -39,25 +45,25 @@ h2 {
   margin: 0px;
 }
 
-h3 {
+body h3 {
   margin: 0px;
 }
 
-h4 {
+body h4 {
   margin: 0px;
 }
 
-a {
+body a {
   text-decoration: none;
 }
 
-ul {
+body ul {
   list-style: none;
   padding: 0px;
   margin: 0px;
 }
 
-.title {
+body .title {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
@@ -75,7 +81,7 @@ ul {
   margin-bottom: 20px;
 }
 
-.title::before {
+body .title::before {
   content: "";
   display: inline-block;
   background-color: #303030;
@@ -84,7 +90,7 @@ ul {
   margin-right: 20px;
 }
 
-.button {
+body .button {
   width: 160px;
   padding-top: 12px;
   padding-bottom: 12px;
@@ -98,31 +104,102 @@ ul {
   text-transform: uppercase;
 }
 
-.container {
+body .container {
   margin: auto;
   padding: 0px 10px 0px 10px;
   width: 100%;
 }
 
 @media screen and (min-width: 480px) {
-  .container {
+  body .container {
     width: 480px;
     padding: 0px 31px 0px 31px;
   }
 }
 
 @media screen and (min-width: 768px) {
-  .container {
+  body .container {
     width: 768px;
     padding: 0px 39px 0px 39px;
   }
 }
 
 @media screen and (min-width: 1280px) {
-  .container {
+  body .container {
     width: 1280px;
     padding: 0px 55px 0px 55px;
   }
+}
+
+.header .container {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+.header .container .header-main {
+  background-image: url(../images/Slider-img-3.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding-top: 40px;
+  padding-bottom: 183px;
+  padding-left: 31px;
+  padding-right: 39px;
+}
+
+.header .container .header-main .logo-burger {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 112px;
+}
+
+.header .container .header-main .title {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 15px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: rgba(157, 164, 189, 0.6);
+  margin-bottom: 20px;
+}
+
+.header .container .header-main .title::before {
+  background: rgba(157, 164, 189, 0.6);
+}
+
+.header .container .header-main h1 {
+  margin-bottom: 20px;
+}
+
+.header .container .header-main p {
+  width: 225px;
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: 0.02em;
+  color: #9da4bd;
+}
+
+@media screen and (min-width: 480px) {
+  .header .container .header-main p {
+    width: 306px;
+  }
+}
+
+.header .container .aside {
+  display: none;
+}
+
+.header .container .navigation {
+  display: none;
 }
 
 .about_us {
@@ -250,6 +327,59 @@ ul {
   color: #555555;
 }
 
+.advantages ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.advantages ul .block {
+  width: calc((100% - 2 * 15px) / 2);
+  height: 133px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 32px;
+  padding-right: 32px;
+  background-color: #f7f7f7;
+}
+
+.advantages ul .block:nth-child(2n) {
+  margin-top: 30px;
+}
+
+.advantages ul .block .number {
+  display: block;
+  font-weight: bold;
+  font-size: 42px;
+  line-height: 57px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  color: #303030;
+}
+
+.advantages ul .block .number::after {
+  content: "+";
+  vertical-align: top;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22px;
+  color: #ff6c00;
+}
+
+.advantages ul .block .number_description {
+  display: block;
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 15px;
+  color: #303030;
+  text-align: center;
+}
+
 .our_masters {
   padding-top: 84px;
   padding-bottom: 84px;
@@ -369,6 +499,10 @@ ul {
   padding-bottom: 8px;
 }
 
+.contact_us .online form label:hover, .contact_us .online form label:focus {
+  color: #ffffff;
+}
+
 .contact_us .online form label input {
   -webkit-appearance: none;
      -moz-appearance: none;
@@ -387,7 +521,8 @@ ul {
   color: #ffffff;
 }
 
-.contact_us .online form label input:focus {
+.contact_us .online form label input:hover, .contact_us .online form label input:focus {
+  color: #ffffff;
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;

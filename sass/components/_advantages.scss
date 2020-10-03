@@ -15,4 +15,46 @@
     letter-spacing: 0.02em;
     color: $color_dark_grey;
   }
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    .block {
+      width: calc((100% - 2 * 15px) / 2);
+      height: 133px;
+      padding-top: 20px;
+      padding-bottom: 20px;
+      padding-left: 32px;
+      padding-right: 32px;
+      background-color: $color_block_grey;
+      &:nth-child(2n) {
+        margin-top: 30px;
+      }
+      .number {
+        display: block;
+        font-weight: bold;
+        font-size: 42px;
+        line-height: 57px;
+        text-align: center;
+        letter-spacing: 0.05em;
+        color: $color_black;
+        &::after {
+          content: "+";
+          vertical-align: top;
+          font-weight: 600;
+          font-size: 16px;
+          line-height: 22px;
+          color: $color_orange;
+        }
+      }
+      .number_description {
+        display: block;
+        font-weight: 600;
+        font-size: 11px;
+        line-height: 15px;
+        color: $color_black;
+        text-align: center;
+      }
+    }
+  }
 }
