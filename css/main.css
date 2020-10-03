@@ -167,7 +167,7 @@ ul {
 
 .prices {
   background: #111319;
-  background-image: url(../../images/prices-bg.png);
+  background-image: url(/images/prices-bg.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -416,7 +416,7 @@ ul {
   padding-top: 84px;
   padding-bottom: 84px;
   background-color: #191c26;
-  background-image: url(./images/contacts-bg.png);
+  background-image: url(/images/contacts-bg.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
