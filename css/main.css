@@ -20,6 +20,7 @@ body {
 }
 
 body h1 {
+  margin: 0px;
   font-family: "Raleway", sans-serif;
   font-style: normal;
   font-weight: bold;
@@ -131,12 +132,120 @@ body .container {
   }
 }
 
-.header .container {
+.header .header-container {
   padding-left: 0px;
   padding-right: 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
-.header .container .header-main {
+.header .header-container .aside {
+  width: 90px;
+  padding-top: 32px;
+  padding-bottom: 78px;
+  display: none;
+}
+
+.header .header-container .aside svg {
+  display: block;
+  margin-bottom: 552px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.header .header-container .aside ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 15px;
+  letter-spacing: 0.2em;
+  text-transform: none;
+  margin: 0px;
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+}
+
+.header .header-container .aside ul .title {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 15px;
+  letter-spacing: 0.2em;
+  text-transform: none;
+  margin: 0px;
+  margin-right: 40px;
+}
+
+.header .header-container .aside ul .title::before {
+  margin-right: 40px;
+}
+
+@media screen and (min-width: 768px) {
+  .header .header-container .aside {
+    display: block;
+    margin-left: 39px;
+    margin-right: 30px;
+  }
+}
+
+.header .header-container .navigation {
+  padding-left: 24px;
+  display: none;
+}
+
+.header .header-container .navigation ul {
+  padding-top: 12px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.1em;
+  color: #ffffff;
+}
+
+.header .header-container .navigation ul li + li {
+  margin-left: 24px;
+}
+
+.header .header-container .navigation .header-contacts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-flow: column-reverse;
+          flex-flow: column-reverse;
+  margin-left: auto;
+}
+
+.header .header-container .navigation .header-contacts a {
+  display: block;
+  text-align: center;
+  color: #ffffff;
+}
+
+.header .header-container .navigation .header-contacts button {
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .header .header-container .navigation {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-bottom: 156px;
+  }
+}
+
+.header .header-container .header-main {
+  width: 100%;
   background-image: url(../images/Slider-img-3.jpg);
   background-repeat: no-repeat;
   background-position: center;
@@ -147,7 +256,13 @@ body .container {
   padding-right: 39px;
 }
 
-.header .container .header-main .logo-burger {
+@media screen and (min-width: 768px) {
+  .header .header-container .header-main {
+    padding-left: 0px;
+  }
+}
+
+.header .header-container .header-main .logo-burger {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -160,8 +275,21 @@ body .container {
   margin-bottom: 112px;
 }
 
-.header .container .header-main .title {
-  font-family: Open Sans;
+@media screen and (min-width: 768px) {
+  .header .header-container .header-main .logo-burger {
+    display: none;
+    margin-bottom: 0px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .header .header-container .header-main .info {
+    padding-left: 120px;
+  }
+}
+
+.header .header-container .header-main .info .title {
+  font-family: "Open Sans", sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 11px;
@@ -172,15 +300,15 @@ body .container {
   margin-bottom: 20px;
 }
 
-.header .container .header-main .title::before {
+.header .header-container .header-main .info .title::before {
   background: rgba(157, 164, 189, 0.6);
 }
 
-.header .container .header-main h1 {
+.header .header-container .header-main .info h1 {
   margin-bottom: 20px;
 }
 
-.header .container .header-main p {
+.header .header-container .header-main .info p {
   width: 225px;
   font-size: 16px;
   line-height: 26px;
@@ -189,17 +317,9 @@ body .container {
 }
 
 @media screen and (min-width: 480px) {
-  .header .container .header-main p {
+  .header .header-container .header-main .info p {
     width: 306px;
   }
-}
-
-.header .container .aside {
-  display: none;
-}
-
-.header .container .navigation {
-  display: none;
 }
 
 .about_us {

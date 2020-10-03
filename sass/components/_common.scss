@@ -14,6 +14,7 @@ body {
   line-height: 26px;
   letter-spacing: 0.02em;
   h1 {
+    margin: 0px;
     font-family: "Raleway", sans-serif;
     font-style: normal;
     font-weight: bold;
@@ -21,7 +22,7 @@ body {
     line-height: 48px;
     letter-spacing: 0.05em;
     color: $color_white;
-    @media screen and (min-width:480px){
+    @media screen and (min-width: 480px) {
       font-size: 48px;
     }
   }
