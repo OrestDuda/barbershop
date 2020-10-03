@@ -501,6 +501,10 @@ ul {
   letter-spacing: 0.1em;
 }
 
+.contacts .title::before {
+  background-color: rgba(157, 164, 189, 0.4);
+}
+
 .footer {
   padding-top: 44px;
   padding-bottom: 44px;

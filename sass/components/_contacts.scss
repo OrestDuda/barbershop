@@ -55,5 +55,8 @@
     font-size: 11px;
     line-height: 15px;
     letter-spacing: 0.1em;
+    &::before {
+      background-color: rgba(157, 164, 189, 0.4);
+    }
   }
 }
