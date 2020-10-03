@@ -32,10 +32,10 @@ h2 {
   letter-spacing: 0.05em;
   margin: 0px;
 }
-h3{
+h3 {
   margin: 0px;
 }
-h4{
+h4 {
   margin: 0px;
 }
 a {
@@ -82,10 +82,11 @@ ul {
 }
 .container {
   margin: auto;
-  padding: 0px 31px 0px 31px;
+  padding: 0px 10px 0px 10px;
   width: 100%;
   @media screen and (min-width: 480px) {
     width: 480px;
+    padding: 0px 31px 0px 31px;
   }
   @media screen and (min-width: 768px) {
     width: 768px;

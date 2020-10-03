@@ -100,13 +100,14 @@ ul {
 
 .container {
   margin: auto;
-  padding: 0px 31px 0px 31px;
+  padding: 0px 10px 0px 10px;
   width: 100%;
 }
 
 @media screen and (min-width: 480px) {
   .container {
     width: 480px;
+    padding: 0px 31px 0px 31px;
   }
 }
 
@@ -261,6 +262,8 @@ ul {
 
 .our_masters img {
   margin-bottom: 30px;
+  width: 100%;
+  height: auto;
 }
 
 .our_masters .name {
@@ -319,6 +322,10 @@ ul {
 .portfolio {
   padding-top: 84px;
   padding-bottom: 84px;
+}
+
+.portfolio img {
+  width: 100%;
 }
 
 .portfolio .title {
@@ -551,10 +558,22 @@ ul {
 }
 
 .footer .container ul li + li {
-  margin-left: 40px;
+  margin-left: 10px;
+}
+
+@media screen and (min-width: 480px) {
+  .footer .container ul li + li {
+    margin-left: 40px;
+  }
 }
 
 .footer .container ul .title::before {
-  margin-right: 40px;
+  margin-right: 10px;
+}
+
+@media screen and (min-width: 480px) {
+  .footer .container ul .title::before {
+    margin-right: 40px;
+  }
 }
 /*# sourceMappingURL=main.css.map */
