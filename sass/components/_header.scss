@@ -16,14 +16,20 @@
       }
       ul {
         display: flex;
-        font-style: normal;
-        font-weight: 600;
-        font-size: 11px;
-        line-height: 15px;
-        letter-spacing: 0.2em;
-        text-transform: none;
-        margin: 0px;
         transform: rotate(-90deg);
+        a {
+          color: $color_black;
+          font-style: normal;
+          font-weight: 600;
+          font-size: 11px;
+          line-height: 15px;
+          letter-spacing: 0.2em;
+          text-transform: none;
+          margin: 0px;
+          &:hover {
+            color: $color_orange;
+          }
+        }
         .title {
           font-style: normal;
           font-weight: 600;
@@ -55,6 +61,12 @@
         line-height: 16px;
         letter-spacing: 0.1em;
         color: $color_white;
+        a {
+          color: $color_white;
+          &:hover {
+            color: $color_orange;
+          }
+        }
         li + li {
           margin-left: 24px;
         }
@@ -67,6 +79,9 @@
           display: block;
           text-align: center;
           color: $color_white;
+          &:hover {
+            cursor: pointer;
+          }
         }
         button {
           color: $color_white;

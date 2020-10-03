@@ -82,6 +82,10 @@ body {
     line-height: 16px;
     letter-spacing: 0.09em;
     text-transform: uppercase;
+    &:hover {
+      cursor: pointer;
+      background-color: $color_orange;
+    }
   }
   .container {
     margin: auto;

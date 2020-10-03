@@ -105,6 +105,11 @@ body .button {
   text-transform: uppercase;
 }
 
+body .button:hover {
+  cursor: pointer;
+  background-color: #ff6c00;
+}
+
 body .container {
   margin: auto;
   padding: 0px 10px 0px 10px;
@@ -158,6 +163,12 @@ body .container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+}
+
+.header .header-container .aside ul a {
+  color: #303030;
   font-style: normal;
   font-weight: 600;
   font-size: 11px;
@@ -165,8 +176,10 @@ body .container {
   letter-spacing: 0.2em;
   text-transform: none;
   margin: 0px;
-  -webkit-transform: rotate(-90deg);
-          transform: rotate(-90deg);
+}
+
+.header .header-container .aside ul a:hover {
+  color: #ff6c00;
 }
 
 .header .header-container .aside ul .title {
@@ -209,6 +222,14 @@ body .container {
   color: #ffffff;
 }
 
+.header .header-container .navigation ul a {
+  color: #ffffff;
+}
+
+.header .header-container .navigation ul a:hover {
+  color: #ff6c00;
+}
+
 .header .header-container .navigation ul li + li {
   margin-left: 24px;
 }
@@ -228,6 +249,10 @@ body .container {
   display: block;
   text-align: center;
   color: #ffffff;
+}
+
+.header .header-container .navigation .header-contacts a:hover {
+  cursor: pointer;
 }
 
 .header .header-container .navigation .header-contacts button {
