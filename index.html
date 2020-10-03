@@ -151,7 +151,7 @@
             <p class="title">для настоящих ценителей атмосферы</p>
             <h2>Наши мастера</h2>
             <ul>
-                <li>
+                <li class="member">
                     <img src="./images/img-3.jpg" alt="John Smith" width="418px">
                     <p class="name">John Smith</p>
                     <p class="profession">Extreme Barber</p>
@@ -178,7 +178,7 @@
                             </a></li>
                     </ul>
                 </li>
-                <li>
+                <li class="member">
                     <img src="./images/img-4.jpg" alt="Michele Doe" width="418px">
                     <p class="name">Michele Doe</p>
                     <p class="profession">Extreme Barber</p>
@@ -206,7 +206,7 @@
                     </ul>
                 </li>
                 </li>
-                <li>
+                <li class="member">
                     <img src="./images/img-5.jpg" alt="Alan Black" width="418px">
                     <p class="name">Alan Black</p>
                     <p class="profession">Extreme Barber</p>
@@ -254,9 +254,16 @@
             <div class="online">
                 <h2>Онлайн-запись</h2>
                 <form>
-                    <input type="text" placeholder="Имя*">
-                    <input type="number" placeholder="Телефон*">
-                    <input class="text" type="text" placeholder="Сообщение*">
+                    <label class="label">Имя*
+                        <input type="text">
+                    </label>
+                    <label>Телефон*
+                        <input type="number">
+                    </label>
+                    <label>
+                        Сообщение*
+                        <input class="text" type="text">
+                    </label>
                     <button class="button">Отправить</button>
                 </form>
             </div>
@@ -287,8 +294,8 @@
     <footer class="footer">
         <div class="container">
             <span> <svg width="12" height="12">
-                <use href="./images/sprite.svg#copyright"></use>
-            </svg>Copyright 2020</span>
+                    <use href="./images/sprite.svg#copyright"></use>
+                </svg>Copyright 2020</span>
             <ul>
                 <li class="title">Instagram</li>
                 <li>Youtube</li>

@@ -5,45 +5,50 @@
   h2 {
     margin-bottom: 44px;
   }
-  img{
+  .member {
+    &:not(:last-child) {
+      margin-bottom: 64px;
+    }
+    img {
       margin-bottom: 30px;
       width: 100%;
       height: auto;
-  }
-  .name {
-    font-size: 18px;
-    line-height: 25px;
-    text-align: center;
-    letter-spacing: 0.02em;
-    color: $color_black;
-    margin: 0px;
-    margin-bottom: 8px;
-  }
-  .profession {
-    font-size: 14px;
-    line-height: 19px;
-    text-align: center;
-    letter-spacing: 0.02em;
-    color: $color_orange;
-    margin: 0px;
-    margin-bottom: 30px;
-  }
-  .social-links {
-    display: flex;
-    justify-content: center;
-    li + li {
-      margin-left: 10px;
     }
-    a {
+    .name {
+      font-size: 18px;
+      line-height: 25px;
+      text-align: center;
+      letter-spacing: 0.02em;
+      color: $color_black;
+      margin: 0px;
+      margin-bottom: 8px;
+    }
+    .profession {
+      font-size: 14px;
+      line-height: 19px;
+      text-align: center;
+      letter-spacing: 0.02em;
+      color: $color_orange;
+      margin: 0px;
+      margin-bottom: 30px;
+    }
+    .social-links {
       display: flex;
       justify-content: center;
-      align-items: center;
-      width: 44px;
-      height: 44px;
-      border-radius: 50%;
-      background: $color_white;
-      &:hover {
-        fill: $color_orange;
+      li + li {
+        margin-left: 10px;
+      }
+      a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 44px;
+        height: 44px;
+        border-radius: 50%;
+        background: $color_white;
+        &:hover {
+          fill: $color_orange;
+        }
       }
     }
   }

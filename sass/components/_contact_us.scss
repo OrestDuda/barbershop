@@ -15,28 +15,42 @@
       margin-bottom: 44px;
     }
     form {
-      input {
-        appearance: none;
-        outline: none;
-        background-color: $color_dark_blue;
-        width: 100%;
-        display: block;
-        margin-bottom: 44px;
-        border: none;
-        border-bottom: 1px solid rgba(157, 164, 189, 0.4);
-        &::placeholder {
-          font-style: normal;
+      label {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 11px;
+        line-height: 15px;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        color: rgba(157, 164, 189, 0.4);
+        padding-bottom: 8px;
+        input {
+          appearance: none;
+          outline: none;
+          background-color: $color_dark_blue;
+          width: 100%;
+          display: block;
+          margin-bottom: 44px;
+          border: none;
+          border-bottom: 1px solid rgba(157, 164, 189, 0.4);
           font-weight: 600;
           font-size: 11px;
           line-height: 15px;
           letter-spacing: 0.1em;
-          text-transform: uppercase;
-          color: rgba(157, 164, 189, 0.4);
-          padding-bottom: 8px;
+          color: $color_white;
+          &:focus {
+            appearance: none;
+            border-bottom: 1px solid $color_white;
+            color: $color_white;
+            font-weight: 600;
+            font-size: 11px;
+            line-height: 15px;
+            letter-spacing: 0.1em;
+          }
         }
-      }
-      .text {
-        padding-bottom: 60px;
+        .text {
+          padding-top: 60px;
+        }
       }
       button {
         display: block;
