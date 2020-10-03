@@ -245,6 +245,7 @@ body .container {
 }
 
 .header .header-container .header-main {
+  position: relative;
   width: 100%;
   background-image: url(../images/Slider-img-3.jpg);
   background-repeat: no-repeat;
@@ -259,6 +260,7 @@ body .container {
 @media screen and (min-width: 768px) {
   .header .header-container .header-main {
     padding-left: 0px;
+    padding-bottom: 0px;
   }
 }
 
@@ -306,6 +308,12 @@ body .container {
 
 .header .header-container .header-main .info h1 {
   margin-bottom: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .header .header-container .header-main .info p {
@@ -320,6 +328,73 @@ body .container {
   .header .header-container .header-main .info p {
     width: 306px;
   }
+}
+
+@media screen and (min-width: 768px) {
+  .header .header-container .header-main .info p {
+    width: 355px;
+  }
+}
+
+.header .header-container .header-main .slider-buttons {
+  position: absolute;
+  bottom: 40px;
+  right: 39px;
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .header .header-container .header-main .slider-buttons {
+    display: block;
+  }
+}
+
+.header .header-container .header-main .slider-buttons ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  color: rgba(157, 164, 189, 0.6);
+}
+
+.header .header-container .header-main .slider-buttons ul li {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 15px;
+  letter-spacing: 0.1em;
+  width: 60px;
+}
+
+.header .header-container .header-main .slider-buttons ul li:first-child {
+  text-align: left;
+}
+
+.header .header-container .header-main .slider-buttons ul li:nth-child(2) {
+  text-align: right;
+}
+
+.header .header-container .header-main .slider-buttons ul li::after {
+  content: "";
+  display: inline-block;
+  background-color: rgba(157, 164, 189, 0.6);
+  height: 1px;
+  width: 60px;
+  margin-right: 20px;
+}
+
+.header .header-container .header-main .slider-buttons ul li:hover {
+  cursor: pointer;
+  color: #ffffff;
+}
+
+.header .header-container .header-main .slider-buttons ul li:hover::after {
+  background-color: #ffffff;
+}
+
+.header .header-container .header-main .slider-buttons li + li {
+  margin-left: 26px;
 }
 
 .about_us {
