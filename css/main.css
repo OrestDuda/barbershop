@@ -107,6 +107,7 @@ body .button {
 
 body .button:hover {
   cursor: pointer;
+  color: #ffffff;
   background-color: #ff6c00;
 }
 
@@ -245,6 +246,18 @@ body .container {
   margin-left: auto;
 }
 
+@media screen and (min-width: 1280px) {
+  .header .header-container .navigation .header-contacts {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: initial;
+            flex-flow: initial;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
 .header .header-container .navigation .header-contacts a {
   display: block;
   text-align: center;
@@ -258,6 +271,13 @@ body .container {
 .header .header-container .navigation .header-contacts button {
   color: #ffffff;
   margin-bottom: 20px;
+}
+
+@media screen and (min-width: 1280px) {
+  .header .header-container .navigation .header-contacts button {
+    margin-left: 40px;
+    margin-bottom: 0px;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -339,6 +359,20 @@ body .container {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+.header .header-container .header-main .info h1 svg {
+  display: none;
+}
+
+.header .header-container .header-main .info h1 svg:hover {
+  cursor: pointer;
+}
+
+@media screen and (min-width: 480px) {
+  .header .header-container .header-main .info h1 svg {
+    display: block;
+  }
 }
 
 .header .header-container .header-main .info p {
@@ -427,11 +461,56 @@ body .container {
   padding-bottom: 84px;
 }
 
-.about_us .working_photo {
+.about_us .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.about_us .container .working_photo {
   display: none;
 }
 
-.about_us h3 {
+@media screen and (min-width: 768px) {
+  .about_us .container .working_photo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .about_us .container .working_photo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .about_us .working-info {
+    padding-left: 30px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .about_us .working-info {
+    padding-left: 64px;
+  }
+}
+
+.about_us .working-info h3 {
   font-family: "Raleway", sans-serif;
   font-style: normal;
   font-weight: bold;
@@ -442,7 +521,7 @@ body .container {
   margin-bottom: 20px;
 }
 
-.about_us h4 {
+.about_us .working-info h4 {
   font-family: "Open Sans", sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -453,13 +532,13 @@ body .container {
   margin-bottom: 20px;
 }
 
-.about_us .description {
+.about_us .working-info .description {
   color: #555555;
   margin: 0px;
   margin-bottom: 40px;
 }
 
-.about_us .button {
+.about_us .working-info .button {
   color: #303030;
 }
 

@@ -84,6 +84,7 @@ body {
     text-transform: uppercase;
     &:hover {
       cursor: pointer;
+      color: $color_white;
       background-color: $color_orange;
     }
   }
