@@ -1204,6 +1204,12 @@ body .container {
   color: #9da4bd;
 }
 
+@media screen and (min-width: 768px) {
+  .footer .container span {
+    padding-top: 0px;
+  }
+}
+
 .footer .container span svg {
   margin-right: 6px;
 }
