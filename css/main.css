@@ -496,6 +496,15 @@ body .container {
         -ms-flex-direction: row;
             flex-direction: row;
   }
+  .about_us .container .working_photo picture + picture {
+    margin-left: 30px;
+  }
+  .about_us .container .working_photo img {
+    -o-object-fit: cover;
+       object-fit: cover;
+    width: 270px;
+    height: 100%;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -570,8 +579,27 @@ body .container {
   background: linear-gradient(180deg, #171a24 0%, rgba(23, 26, 36, 0.2) 100%);
   margin-left: auto;
   margin-right: auto;
-  padding: 30px;
   margin-bottom: 50px;
+  padding: 30px 40px;
+}
+
+@media screen and (min-width: 1280px) {
+  .prices .container div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 0px 0px;
+  }
+  .prices .container div .first-block {
+    width: 50%;
+    padding: 30px 40px;
+  }
+  .prices .container div .second-block {
+    width: 50%;
+    padding: 30px 40px;
+    background: -webkit-gradient(linear, left top, left bottom, from(#090b13), to(rgba(9, 11, 19, 0.2)));
+    background: linear-gradient(180deg, #090b13 0%, rgba(9, 11, 19, 0.2) 100%);
+  }
 }
 
 .prices .price_item {

@@ -20,8 +20,26 @@
     background: linear-gradient(180deg, #171a24 0%, rgba(23, 26, 36, 0.2) 100%);
     margin-left: auto;
     margin-right: auto;
-    padding: 30px;
     margin-bottom: 50px;
+    padding: 30px 40px;
+
+    @media screen and (min-width: 1280px) {
+      display: flex;
+      padding: 0px 0px;
+      .first-block {
+        width: 50%;
+        padding: 30px 40px;
+      }
+      .second-block {
+        width: 50%;
+        padding: 30px 40px;
+        background: linear-gradient(
+          180deg,
+          #090b13 0%,
+          rgba(9, 11, 19, 0.2) 100%
+        );
+      }
+    }
   }
   .price_item {
     display: flex;
