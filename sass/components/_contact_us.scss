@@ -78,6 +78,11 @@
         line-height: 15px;
         letter-spacing: 0.1em;
         color: $color_white;
+        &::-webkit-inner-spin-button,
+        &::-webkit-outer-spin-button {
+          -webkit-appearance: none;
+          margin: 0;
+        }
         &:hover,
         &:focus {
           color: $color_white;

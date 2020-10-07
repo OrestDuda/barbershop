@@ -1048,6 +1048,11 @@ body .container {
   color: #ffffff;
 }
 
+.contact_us .online form input::-webkit-inner-spin-button, .contact_us .online form input::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
 .contact_us .online form input:hover, .contact_us .online form input:focus {
   color: #ffffff;
   -webkit-appearance: none;
