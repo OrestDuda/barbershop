@@ -461,6 +461,20 @@ body .container {
   padding-bottom: 84px;
 }
 
+@media screen and (min-width: 768px) {
+  .about_us {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .about_us {
+    padding-top: 130px;
+    padding-bottom: 130px;
+  }
+}
+
 .about_us .container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -561,6 +575,20 @@ body .container {
   padding-bottom: 84px;
 }
 
+@media screen and (min-width: 768px) {
+  .prices {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .prices {
+    padding-top: 130px;
+    padding-bottom: 130px;
+  }
+}
+
 .prices .title {
   color: rgba(157, 164, 189, 0.6);
 }
@@ -637,6 +665,20 @@ body .container {
 .advantages {
   padding-top: 84px;
   padding-bottom: 84px;
+}
+
+@media screen and (min-width: 768px) {
+  .advantages {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .advantages {
+    padding-top: 130px;
+    padding-bottom: 130px;
+  }
 }
 
 @media screen and (min-width: 1280px) {
@@ -745,21 +787,59 @@ body .container {
   background-color: #f7f7f7;
 }
 
+@media screen and (min-width: 768px) {
+  .our_masters {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .our_masters {
+    padding-top: 130px;
+    padding-bottom: 130px;
+  }
+}
+
 .our_masters h2 {
   margin-bottom: 44px;
 }
 
-.our_masters .member:not(:last-child) {
+@media screen and (min-width: 1280px) {
+  .our_masters ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
+.our_masters ul .member:not(:last-child) {
   margin-bottom: 64px;
 }
 
-.our_masters .member img {
+@media screen and (min-width: 1280px) {
+  .our_masters ul .member:not(:last-child) {
+    margin-bottom: 0px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .our_masters ul .member {
+    width: 370px;
+    margin-bottom: 0px;
+  }
+}
+
+.our_masters ul .member img {
   margin-bottom: 30px;
   width: 100%;
   height: auto;
 }
 
-.our_masters .member .name {
+.our_masters ul .member .name {
   font-size: 18px;
   line-height: 25px;
   text-align: center;
@@ -769,7 +849,7 @@ body .container {
   margin-bottom: 8px;
 }
 
-.our_masters .member .profession {
+.our_masters ul .member .profession {
   font-size: 14px;
   line-height: 19px;
   text-align: center;
@@ -779,7 +859,7 @@ body .container {
   margin-bottom: 30px;
 }
 
-.our_masters .member .social-links {
+.our_masters ul .member .social-links {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -788,11 +868,11 @@ body .container {
           justify-content: center;
 }
 
-.our_masters .member .social-links li + li {
+.our_masters ul .member .social-links li + li {
   margin-left: 10px;
 }
 
-.our_masters .member .social-links a {
+.our_masters ul .member .social-links a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -808,7 +888,7 @@ body .container {
   background: #ffffff;
 }
 
-.our_masters .member .social-links a:hover {
+.our_masters ul .member .social-links a:hover {
   fill: #ff6c00;
 }
 
@@ -817,16 +897,56 @@ body .container {
   padding-bottom: 84px;
 }
 
-.portfolio img {
-  width: 100%;
+@media screen and (min-width: 768px) {
+  .portfolio {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .portfolio {
+    padding-top: 130px;
+    padding-bottom: 130px;
+  }
 }
 
 .portfolio .title {
   margin-bottom: 44px;
 }
 
-.portfolio li {
+@media screen and (min-width: 768px) {
+  .portfolio ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
+.portfolio ul li {
   margin-bottom: 30px;
+}
+
+.portfolio ul li img {
+  width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .portfolio ul li {
+    margin-bottom: 0px;
+    width: 330px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .portfolio ul li {
+    width: 270px;
+  }
 }
 
 .contact_us {
