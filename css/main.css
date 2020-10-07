@@ -949,10 +949,38 @@ body .container {
   }
 }
 
+@media screen and (min-width: 1280px) {
+  .contact-us-contacts {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .contact-us-contacts section {
+    width: 50%;
+  }
+  .contact-us-contacts section .container {
+    width: 680px;
+  }
+}
+
 .contact_us {
   padding-top: 84px;
   padding-bottom: 84px;
   background-color: #191c26;
+}
+
+@media screen and (min-width: 768px) {
+  .contact_us {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .contact_us {
+    padding-top: 130px;
+    padding-bottom: 130px;
+  }
 }
 
 .contact_us .online h2 {
@@ -965,6 +993,26 @@ body .container {
   letter-spacing: 0.05em;
   color: #ffffff;
   margin-bottom: 44px;
+}
+
+@media screen and (min-width: 768px) {
+  .contact_us .online form .name-number {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .contact_us .online form .name-number input {
+    width: 330px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .contact_us .online form .name-number input {
+    width: 270px;
+  }
 }
 
 .contact_us .online form label {
@@ -982,7 +1030,7 @@ body .container {
   color: #ffffff;
 }
 
-.contact_us .online form label input {
+.contact_us .online form input {
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
@@ -1000,7 +1048,7 @@ body .container {
   color: #ffffff;
 }
 
-.contact_us .online form label input:hover, .contact_us .online form label input:focus {
+.contact_us .online form input:hover, .contact_us .online form input:focus {
   color: #ffffff;
   -webkit-appearance: none;
      -moz-appearance: none;
@@ -1013,11 +1061,11 @@ body .container {
   letter-spacing: 0.1em;
 }
 
-.contact_us .online form label .text {
+.contact_us .online form .text {
   padding-top: 60px;
 }
 
-.contact_us .online form button {
+.contact_us .online button {
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -1032,6 +1080,20 @@ body .container {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+@media screen and (min-width: 768px) {
+  .contacts {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .contacts {
+    padding-top: 130px;
+    padding-bottom: 130px;
+  }
 }
 
 .contacts h2 {
