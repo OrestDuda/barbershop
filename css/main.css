@@ -639,11 +639,29 @@ body .container {
   padding-bottom: 84px;
 }
 
-.advantages h2 {
+@media screen and (min-width: 1280px) {
+  .advantages .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .advantages .container .advantages-text {
+    width: 500px;
+  }
+}
+
+.advantages .container .advantages-text h2 {
   margin-bottom: 20px;
 }
 
-.advantages h3 {
+.advantages .container .advantages-text h3 {
   margin-bottom: 44px;
   font-family: "Open Sans", sans-serif;
   font-style: normal;
@@ -654,7 +672,21 @@ body .container {
   color: #555555;
 }
 
-.advantages ul {
+@media screen and (min-width: 768px) {
+  .advantages .container .advantages-blocks {
+    width: 450px;
+    margin-left: auto;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .advantages .container .advantages-blocks {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.advantages .container .advantages-blocks ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -665,7 +697,7 @@ body .container {
           justify-content: space-between;
 }
 
-.advantages ul .block {
+.advantages .container .advantages-blocks ul .block {
   width: calc((100% - 2 * 15px) / 2);
   height: 133px;
   padding-top: 20px;
@@ -675,11 +707,11 @@ body .container {
   background-color: #f7f7f7;
 }
 
-.advantages ul .block:nth-child(2n) {
+.advantages .container .advantages-blocks ul .block:nth-child(2n) {
   margin-top: 30px;
 }
 
-.advantages ul .block .number {
+.advantages .container .advantages-blocks ul .block .number {
   display: block;
   font-weight: bold;
   font-size: 42px;
@@ -689,7 +721,7 @@ body .container {
   color: #303030;
 }
 
-.advantages ul .block .number::after {
+.advantages .container .advantages-blocks ul .block .number::after {
   content: "+";
   vertical-align: top;
   font-weight: 600;
@@ -698,7 +730,7 @@ body .container {
   color: #ff6c00;
 }
 
-.advantages ul .block .number_description {
+.advantages .container .advantages-blocks ul .block .number_description {
   display: block;
   font-weight: 600;
   font-size: 11px;
