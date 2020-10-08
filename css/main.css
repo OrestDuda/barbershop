@@ -302,6 +302,16 @@ body .container {
   padding-right: 39px;
 }
 
+@media screen and (min-device-pixel-ratio: 2), screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
+  .header .header-container .header-main {
+    background: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/Slider-img-3-x2.jpg);
+    background: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/Slider-img-3-x2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .header .header-container .header-main {
     padding-left: 0px;
@@ -320,6 +330,10 @@ body .container {
       -ms-flex-pack: justify;
           justify-content: space-between;
   margin-bottom: 112px;
+}
+
+.header .header-container .header-main .logo-burger .cross {
+  display: none;
 }
 
 @media screen and (min-width: 768px) {
