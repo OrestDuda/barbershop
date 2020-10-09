@@ -59,6 +59,7 @@
         text-transform: uppercase;
         color: rgba(157, 164, 189, 0.4);
         padding-bottom: 8px;
+        transition: $transition_all;
         &:hover,
         &:focus {
           color: $color_white;
@@ -104,6 +105,7 @@
       margin-left: auto;
       margin-right: auto;
       color: $color_white;
+      transition: $transition_all;
       @media screen and (min-width: 768px) {
         margin: 0px;
       }

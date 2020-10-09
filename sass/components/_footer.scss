@@ -33,6 +33,15 @@
         letter-spacing: 0.2em;
         margin-bottom: 0px;
         text-transform: none;
+        a {
+          color: $color_black;
+          transition: $transition_all;
+        }
+        &:hover {
+          a {
+            color: $color_orange;
+          }
+        }
       }
       li + li {
         margin-left: 10px;

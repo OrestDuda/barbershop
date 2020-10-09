@@ -66,6 +66,7 @@
           height: 44px;
           border-radius: 50%;
           background: $color_white;
+          transition: $transition_all;
           &:hover {
             fill: $color_orange;
           }

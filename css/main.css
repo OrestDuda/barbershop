@@ -177,6 +177,8 @@ body .container {
   letter-spacing: 0.2em;
   text-transform: none;
   margin: 0px;
+  -webkit-transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header .header-container .aside ul a:hover {
@@ -225,6 +227,8 @@ body .container {
 
 .header .header-container .navigation ul a {
   color: #ffffff;
+  -webkit-transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header .header-container .navigation ul a:hover {
@@ -264,11 +268,8 @@ body .container {
   color: #ffffff;
 }
 
-.header .header-container .navigation .header-contacts a:hover {
-  cursor: pointer;
-}
-
 .header .header-container .navigation .header-contacts button {
+  outline: none;
   color: #ffffff;
   margin-bottom: 20px;
 }
@@ -332,15 +333,30 @@ body .container {
   margin-bottom: 112px;
 }
 
-.header .header-container .header-main .logo-burger .cross {
-  display: none;
-}
-
 @media screen and (min-width: 768px) {
   .header .header-container .header-main .logo-burger {
     display: none;
     margin-bottom: 0px;
   }
+}
+
+.header .header-container .header-main .logo-burger svg {
+  fill: #ffffff;
+}
+
+.header .header-container .header-main .logo-burger button {
+  background-color: transparent;
+  border: none;
+  outline: none;
+}
+
+.header .header-container .header-main .logo-burger button svg {
+  -webkit-transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.header .header-container .header-main .logo-burger button:hover svg {
+  fill: #ff6c00;
 }
 
 @media screen and (min-width: 768px) {
@@ -577,6 +593,12 @@ body .container {
 
 .about_us .working-info .button {
   color: #303030;
+  -webkit-transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.about_us .working-info .button:hover {
+  color: #ffffff;
 }
 
 .prices {
@@ -674,6 +696,8 @@ body .container {
   margin-left: auto;
   margin-right: auto;
   color: #ffffff;
+  -webkit-transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .advantages {
@@ -900,6 +924,8 @@ body .container {
   height: 44px;
   border-radius: 50%;
   background: #ffffff;
+  -webkit-transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .our_masters ul .member .social-links a:hover {
@@ -1038,6 +1064,8 @@ body .container {
   text-transform: uppercase;
   color: rgba(157, 164, 189, 0.4);
   padding-bottom: 8px;
+  -webkit-transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .contact_us .online form label:hover, .contact_us .online form label:focus {
@@ -1089,6 +1117,8 @@ body .container {
   margin-left: auto;
   margin-right: auto;
   color: #ffffff;
+  -webkit-transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 @media screen and (min-width: 768px) {
@@ -1256,6 +1286,16 @@ body .container {
   text-transform: none;
 }
 
+.footer .container ul li a {
+  color: #303030;
+  -webkit-transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer .container ul li:hover a {
+  color: #ff6c00;
+}
+
 .footer .container ul li + li {
   margin-left: 10px;
 }
@@ -1274,5 +1314,151 @@ body .container {
   .footer .container ul .title::before {
     margin-right: 40px;
   }
+}
+
+.backdrop {
+  top: 0px;
+  left: 0px;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: rgba(25, 28, 38, 0.2);
+  opacity: 1;
+  -webkit-transition: opacity 600ms linear;
+  transition: opacity 600ms linear;
+  overflow-y: scroll;
+}
+
+.backdrop.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.modal {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  height: 100%;
+  width: 337px;
+  background-color: #ffffff;
+  padding: 48px 31px 0px 40px;
+}
+
+.modal .button-close {
+  height: 40px;
+  width: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  margin-left: auto;
+  margin-bottom: 30px;
+}
+
+.modal .button-close:hover svg {
+  fill: #ff6c00;
+}
+
+.modal .modal-nav {
+  margin-bottom: 64px;
+}
+
+.modal .modal-nav li:not(:last-child) {
+  margin-bottom: 24px;
+}
+
+.modal .modal-nav li a {
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 25px;
+  text-align: center;
+  letter-spacing: 0.1em;
+  color: #303030;
+}
+
+.modal .modal-nav li:hover a {
+  color: #ff6c00;
+}
+
+.modal .modal-contacts {
+  margin-bottom: 64px;
+}
+
+.modal .modal-contacts li:first-child {
+  margin-bottom: 24px;
+}
+
+.modal .modal-contacts a {
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 25px;
+  text-align: center;
+  letter-spacing: 0.1em;
+  color: #303030;
+}
+
+.modal .modal-contacts a:hover {
+  color: #ff6c00;
+}
+
+.modal .modal-contacts button {
+  height: 40px;
+  width: 194px;
+  text-align: center;
+  background-color: transparent;
+  border: 1px solid #ff6c00;
+  border-radius: 25px;
+  text-transform: uppercase;
+}
+
+.modal .modal-contacts button:hover {
+  color: #ffffff;
+  background-color: #ff6c00;
+}
+
+.modal .modal-social li + li {
+  margin-left: 100px;
+}
+
+.modal .modal-social li:hover a {
+  color: #ff6c00;
+}
+
+.modal .modal-social .title {
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 25px;
+  letter-spacing: 0.2em;
+  color: #303030;
+  text-transform: unset;
+  margin-bottom: 24px;
+}
+
+.modal .modal-social .title::before {
+  margin-right: 40px;
+}
+
+.modal .modal-social a {
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 25px;
+  letter-spacing: 0.2em;
+  color: #303030;
 }
 /*# sourceMappingURL=main.css.map */

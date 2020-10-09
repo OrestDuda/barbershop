@@ -26,6 +26,7 @@
           letter-spacing: 0.2em;
           text-transform: none;
           margin: 0px;
+          transition: $transition_all;
           &:hover {
             color: $color_orange;
           }
@@ -63,6 +64,7 @@
         color: $color_white;
         a {
           color: $color_white;
+          transition: $transition_all;
           &:hover {
             color: $color_orange;
           }
@@ -83,11 +85,9 @@
           display: block;
           text-align: center;
           color: $color_white;
-          &:hover {
-            cursor: pointer;
-          }
         }
         button {
+          outline: none;
           color: $color_white;
           margin-bottom: 20px;
           @media screen and (min-width: 1280px) {
@@ -137,12 +137,25 @@
         align-items: center;
         justify-content: space-between;
         margin-bottom: 112px;
-        .cross {
-          display: none;
-        }
         @media screen and(min-width:768px) {
           display: none;
           margin-bottom: 0px;
+        }
+        svg {
+          fill: $color_white;
+        }
+        button {
+          background-color: transparent;
+          border: none;
+          outline: none;
+          svg {
+            transition: $transition_all;
+          }
+          &:hover {
+            svg {
+              fill: $color_orange;
+            }
+          }
         }
       }
       .info {

@@ -66,6 +66,10 @@
     }
     .button {
       color: $color_black;
+      transition: $transition_all;
+      &:hover {
+        color: $color_white;
+      }
     }
   }
 }

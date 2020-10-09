@@ -32,11 +32,11 @@
                     <svg width="69" height="55" class="logo">
                         <use href="./images/sprite.svg#Logo"></use>
                     </svg>
-                    <svg width="24" height="16" class="burger-menu">
-                        <use href="./images/sprite.svg#menu"></use>
-                        <use class="cross" href="./images/sprite.svg#close"></use>
-                    </svg>
-
+                    <button data-modal-open>
+                        <svg width="24" height="16" class="burger-menu">
+                            <use href="./images/sprite.svg#menu"></use>
+                        </svg>
+                    </button>
                 </div>
                 <div class="navigation">
                     <nav>
@@ -48,7 +48,7 @@
                         </ul>
                     </nav>
                     <div class="header-contacts">
-                        <a>+38 044 111 11 11</a>
+                        <a href="tel:+38 044 111 11 11">+38 044 111 11 11</a>
                         <button class="button">онлайн-запись</button>
                     </div>
                 </div>
@@ -373,12 +373,37 @@
                     <use href="./images/sprite.svg#copyright"></use>
                 </svg>Copyright 2020</span>
             <ul>
-                <li class="title">Instagram</li>
-                <li>Youtube</li>
+                <li class="title"><a href="">Instagram</a></li>
+                <li><a href="">Youtube</a></li>
             </ul>
         </div>
     </footer>
+    <div class="backdrop is-hidden" data-modal>
+        <div class="modal">
+            <button class="button-close" data-modal-close>
+                <svg width="24" height="16">
+                    <use href="./images/sprite.svg#close"></use>
+                </svg>
+            </button>
+            <ul class="modal-nav">
+                <li><a href="">О нас</a></li>
+                <li><a href="">Услуги и цены</a></li>
+                <li><a href="">Мастера</a></li>
+                <li><a href="">Контакты</a></li>
+            </ul>
 
+            <ul class="modal-contacts">
+                <li><a href="tel:+38 044 111 11 11">+38 044 111 11 11</a></li>
+                <li><button>онлайн-запись</button></li>
+            </ul>
+
+            <ul class="modal-social">
+                <li><a href="" class="title">Instagram</a></li>
+                <li><a href="">Youtube</a></li>
+            </ul>
+        </div>
+    </div>
 </body>
+<script src="./js/modal.js"></script>
 
 </html>
